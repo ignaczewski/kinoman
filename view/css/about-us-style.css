@@ -1,0 +1,79 @@
+.col-md-12{
+	padding:0;
+}
+
+.about-us{
+    text-align:center;
+    position:relative;
+    -webkit-box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px 0 20px 0;
+}
+
+.about-us > h3{
+    text-align: center;
+    letter-spacing: 8px;
+    background-color: rgba(199, 21, 133, 0.3);
+    padding: 10px 0 10px 0;
+    margin:0;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px dotted #8B008B;
+}
+
+.about-us >h4{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 10px;
+    background-color: rgba(199, 21, 133, 0.3);
+    padding: 5px 0 5px 0;
+    margin:0;
+    border-top: 2px dotted #4B0082;
+    border-bottom: 1px dotted #8B008B;
+}
+
+.img-kino{
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.img-kino img{
+    position:relative;
+    max-width:100%;
+    height:auto;
+}
+
+.nav-tabs{
+    background-color: rgba(0, 0, 0, 0.7);	
+}
+
+.tab-content{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px ;	
+}
+
+.about-us-description{
+    height:auto;
+    position:relative;
+    padding-bottom: 81px;
+}
+
+.about-us-description >h4{
+    margin:20px 0 35px 0;
+}
+
+.about-us-description >p{
+    text-align:justify;
+    text-indent: 20px;
+    margin: 15px;
+}
+
+.about-us-map{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+

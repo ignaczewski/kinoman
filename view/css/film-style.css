@@ -1,0 +1,228 @@
+h3{
+    font-size: 1.7rem;
+    margin:3px 0 10px 5px;			
+}
+
+.container{
+    position: relative;	
+    padding-bottom:15px;
+    margin: 30px auto;
+    background-color:rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+.film-header{
+    padding-top: 15px;
+    margin-bottom:15px;	
+}
+
+.film-img{
+    height:385px;
+    overflow:hidden;
+    text-align: center;
+    display:inline-block;
+}
+
+.film-img img{
+    position:relative;
+    top:2%;
+    max-height:95%;
+    width:auto;
+}
+
+.film-front{
+    padding:0;
+}
+
+.film-title {
+    height:70px;	
+}
+
+.film-title h1 {
+    font-size: 2.3rem;
+    margin:5px 5px;	
+}
+
+.film-title h2 {
+    font-size: 1.8rem;
+    margin:5px 5px;	
+}
+
+/*--------------------------------------------------------------------------REPERTUAR_FILMU-------------------------------------------------------------------------*/
+
+.film-rep-box{
+    height:270px;
+    margin-top:10px;
+    padding-bottom:15px;
+    background-color: rgba(64, 64, 64, 0.6);
+    -webkit-box-shadow: inset 0px 0px 21px 9px rgba(199,21,133,0.8);
+    -moz-box-shadow: inset 0px 0px 21px 9px rgba(199,21,133,0.8);
+    box-shadow: inset 0px 0px 21px 9px rgba(199,21,133,0.8);
+}
+
+.film-day-rep{
+    height:100%;
+    text-align: center;
+    margin-top:15px;
+    padding: 0 13px;
+}
+
+
+.film-day-rep > h2{
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    padding:2px 0;
+}
+
+.film-day-rep > h3{
+    font-size: 1.4rem;
+    padding: 2px 0;
+    margin:0;
+    font-weight: bold
+}
+
+.film-day-rep > p{
+    font-size: 1.3rem;
+    padding:0 0 5px 0;
+    margin:0;
+    font-weight: 200;
+    border-bottom: 1px solid #c71585;
+}
+
+.film-day-h{
+    margin-top:10px;	
+}
+
+.film-day-h > a{
+    display:inline-block;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    margin:3px 3px;
+}
+/*--------------------------------------------------------------------------OPIS-------------------------------------------------------------------------*/
+.film-description{
+    padding:0;
+}
+
+.film-desc p{
+    text-indent: 20px;	
+    font-size:1.5rem;
+    padding-bottom:10px;
+    text-align:justify;
+    border-bottom: 1px solid #c71585;
+}
+
+/*--------------------------------------------------------------------------INFO-------------------------------------------------------------------------*/
+
+.film-info{
+    font-size:1.3rem;
+    padding-left: 35px;
+}
+
+/*--------------------------------------------------------------------------OBSADA-------------------------------------------------------------------------*/
+
+.film-cast p{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.film-rcast p{
+    color: #c71585;
+}
+
+.film-rec-one > a > h3{
+    font-size: 1.5rem;
+}
+
+.film-rec-one > a {
+    transition-duration: 0.7s;
+}
+
+.film-rec-one:hover{
+    transition-duration:1s;
+}
+
+.film-rec-one:hover{
+    background-color: rgba(64, 64, 64, 0.6);
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------------POP UP-------------------------------------------------------------------------*/
+.modal-dialog{
+    border-radius: 5px;
+    margin-top: 15%;
+}
+
+.modal-content{
+    background-color: #404040;
+    border: 2px solid #c71585;
+    border-radius: 5px;
+}
+
+.modal-header{
+    border-bottom: 1px solid #c71585;	
+}
+
+.modal-body{
+    background-color: #c71585;	
+    color: #fff;	
+}
+
+.modal-footer{
+    border-top: 1px solid #c71585;
+    text-align: center;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    transition-duration: 1s;
+}
+	
+.btn-default:hover {
+    color: #000;
+    background-color: #c71585;
+    border-color: #000;
+}
+
+/*------------------------------------------RESPONSIVE -----------------------------------------------------------------*/
+
+@media (max-width: 1250px  ) {	
+
+}
+
+@media (max-width: 992px ) {
+    .film-rep-box{
+        height:auto;
+    }
+    .film-img{
+        height:300px;
+    }
+    .film-header{
+        height:auto;	
+    }
+    .container{
+        height: auto;	
+    }
+    .film-rec{
+        margin-top:20px;
+    }
+    .film-day-rep{
+        height:auto;
+        padding-bottom:15px;
+    }
+    .film-front{
+        margin-bottom:15px;
+    }
+}	
+	
+	
+	
+	
+	

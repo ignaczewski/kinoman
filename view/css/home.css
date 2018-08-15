@@ -1,0 +1,340 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    background-image:url('../img/tlo.png');
+    color: #fff;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    position:relative;
+}
+
+*{
+    padding: 0;
+    margin: 0; 	
+}
+
+a { color: #fff; text-decoration: none; margin: 0; padding:0}
+
+.clear
+{
+    clear:both;
+}
+
+header
+{
+    max-width:1349px;
+    margin: 0 auto;
+}
+
+.container{
+    padding: 0;
+}
+/*--------------------------------------------------------------------------BANNER-------------------------------------------------------------------------*/
+
+.banner{
+    max-width:1500px;
+    margin:0 auto;
+}
+
+#myCarousel{
+    height: 600px;  
+}
+
+.carousel-inner{
+    height: 100%;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 600px;
+}
+.carousel-caption{
+    margin-bottom:100px;
+}
+
+/*--------------------------------------------------------------------------NEWS-------------------------------------------------------------------------*/
+
+.container{
+    margin-top:40px;
+    padding-top: 0px;	
+}
+
+
+.news{
+    padding:0;
+    -webkit-box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 77px 7px rgba(0,0,0,0.9);
+    border-radius: 10px 10px 0 0;
+}
+
+.news > h1{
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 2.2rem;
+    color: white;
+    background-color: rgba(199, 21, 133, 0.3);
+    padding: 10px 0 10px 0;
+    margin:0;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0 3px 0;
+}
+
+
+.news >h2{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 10px;
+    color: white;
+    background-color: rgba(199, 21, 133, 0.3);
+    padding: 5px 0 5px 0;
+    margin:0;
+    border-top: 1px dotted #4B0082;
+    border-bottom: 1px dotted #8B008B;
+}
+
+
+
+.recommended{
+    padding: 40px 5px 25px 5px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.col-half-offset{
+    margin-left:4.16%
+}
+
+.rec_img{
+    width: 100%;
+    height: 200px;
+    position:relative;
+    padding: 0;
+}
+
+.rec_img img{
+    transition: all 1.3s;
+    position:absolute;
+    max-width: 100%;
+    height: 200px;
+    z-index:1;
+    padding: 0;
+}
+
+.rec_title p{
+    font-size: 1.1rem;
+    text-align:center;
+}
+
+.rec_img  :hover{
+    opacity: 1;
+    transform: scale(1.4);
+
+}
+
+.rec_title{
+    padding: 0;
+    text-align: center;
+    background-color: rgba(199, 21, 133, 0.3);
+}
+
+.description{
+    clear:both;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin:0;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    overflow : hidden;
+    text-overflow: ellipsis;	
+}
+
+.description > p{
+    margin: 0 7px;
+}
+
+/*--------------------------------------------------------------------------REVIEWS-------------------------------------------------------------------------*/
+
+.reviews{
+    margin-top: 50px;
+}
+
+
+.review{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 0 0 0;
+}
+
+.one-review{
+    height: 210px;
+    position: relative;
+    border-bottom: 1px solid #8B008B;
+    padding: 15px 0 0 0;
+}
+
+.rev-img{
+    height: 90%;
+}
+
+.rev-img img{
+    position: relative;
+    width: auto;
+    max-height: 100%;
+}
+
+.rev-main{
+    padding: 0 10px;
+    height:100%;
+
+}
+
+.rev-h{
+    padding:0;
+    border-bottom: 2px dotted #8B008B;
+}
+.rev-title{
+    padding: 0;
+}
+
+.rev-title h3{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+
+.rev-author{
+    text-align: right;
+}
+
+.rev-author p{
+    margin:0;
+}
+
+.rev-title :hover{
+    color:#8B008B;
+}
+
+.rev-description{
+    clear:both;
+    position:relative;
+    height:150px;
+    padding: 10px 0 10px 0 ;
+    font-size: 1.3rem;
+    overflow : hidden;
+}
+
+.rev-description > a  > p{
+    text-indent: 1.5em;
+    margin-left: 15px ;
+    margin-right: 10px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+/*------------------------------------------RESPONSIVE -----------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px ) {
+    #myCarousel{
+        height: 520px;  
+    }
+
+    .carousel-inner > .item > img {
+        height: 520px;
+    }
+    
+    .carousel-caption{
+        margin-bottom:30px;
+    }
+    
+    .col-half-offset{
+        margin-left:0;
+    }
+
+    .rec_img{
+        height: 275px;
+    }
+
+    .rec_img img{
+        height: 275px;
+    }
+}
+
+@media (max-width: 768px) {
+    #myCarousel{
+        height: 390px;  
+    }
+
+    .carousel-inner > .item > img {
+        height: 390px;
+    }
+    
+    .carousel-caption{
+        margin-bottom:30px;
+    }
+    
+    .one-review{
+        height:230px;
+    }
+    
+    .rec_img{
+        height: 300px;
+    }
+
+    .rec_img img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .rec_img{
+        height: 175px;
+    }
+
+    .rec_img img{
+        height: 175px;
+    }
+    
+    .rev-img{
+        display:none;
+    }
+    
+    .rev-img img
+    {
+        display:none;
+    }   
+    .one-review
+    {
+	height: 250px;
+	padding: 15px 0 0 0;
+    }
+    .rev-main{
+        width:100%;
+    }
+    .rev-description{
+        height:200px;
+    }
+    
+    .rev-title h3{
+        font-size:18px
+    }
+
+    .rev-author p
+    {
+        font-size:12px
+    }
+ }
+
+
+
+
+
+
+
+		
