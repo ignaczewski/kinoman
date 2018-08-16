@@ -22,19 +22,12 @@ a { color: #fff; text-decoration: none; margin: 0; padding:0}
     clear:both;
 }
 
-header
-{
-    max-width:1349px;
-    margin: 0 auto;
-}
-
 .container{
     padding: 0;
 }
 /*--------------------------------------------------------------------------BANNER-------------------------------------------------------------------------*/
 
 .banner{
-    max-width:1500px;
     margin:0 auto;
 }
 
@@ -53,7 +46,8 @@ header
     height: 600px;
 }
 .carousel-caption{
-    margin-bottom:100px;
+    position: absolute;
+    top: 75%;
 }
 
 /*--------------------------------------------------------------------------NEWS-------------------------------------------------------------------------*/
@@ -239,8 +233,36 @@ header
 }
 
 /*------------------------------------------RESPONSIVE -----------------------------------------------------------------*/
+@media screen and (min-width: 1441px ) {
+    .banner{
+        max-width:100%;
+    }
 
-@media screen and (max-width: 1200px ) {
+    #myCarousel{
+        max-height: 1000px;  
+    }
+
+    .carousel-inner > .item > img {
+        margin: auto;
+        min-width: 100%;
+        max-height: 1000px;
+    }
+    .carousel-caption{
+        position: absolute;
+        top: 45%;
+    }
+
+}
+
+@media screen and (max-width: 1440px ) {
+    .carousel-caption{
+        position: absolute;
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width: 1280px ) {
     #myCarousel{
         height: 520px;  
     }
@@ -250,7 +272,8 @@ header
     }
     
     .carousel-caption{
-        margin-bottom:30px;
+        position: absolute;
+        top: 55%;
     }
     
     .col-half-offset{
@@ -266,19 +289,40 @@ header
     }
 }
 
+@media screen and (max-width: 1080px ) {
+    #myCarousel{
+        height: 420px;  
+    }
+
+    .carousel-inner > .item > img {
+        height: 420px;
+    }
+    
+    .carousel-caption{
+        position: absolute;
+        top: 50%;
+    }
+
+}
+
 @media (max-width: 768px) {
     #myCarousel{
         height: 390px;  
     }
 
+    .carousel-inner{
+        height: 390px;
+    }
+    
     .carousel-inner > .item > img {
         height: 390px;
     }
     
     .carousel-caption{
-        margin-bottom:30px;
+        position: absolute;
+        top: 60%;
     }
-    
+
     .one-review{
         height:230px;
     }
